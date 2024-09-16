@@ -13,7 +13,8 @@ def is_contains(string, list_to_search):       # Принимает два ар�
                                                # если строка находится в этом списке, False - если отсутствует
     count_calls()
     string_lower = string.lower()
-    return any(string_lower == item.lower() for item in list_to_search)
+    return any(string_lower == item.lower()
+               for item in list_to_search)
 
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
